@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic_tac_toe</title>
+     <link rel="stylesheet" href="style.css">
+     <style>
+          /* Add CSS for Congratulations animation */
+          .congratulations  , .Looser{
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              animation: congratulationsAnimation 2s ease-out forwards;
+             animation-iteration-count: infinite;
+              display: none;
+          }
+  
+          @keyframes congratulationsAnimation {
+              0% {
+                  transform: translate(-50%, -50%) scale(1);
+                  opacity: 0;
+              }
+              50% {
+                  transform: translate(-50%, -50%) scale(1.8);
+                  opacity: 1;
+              }
+              100% {
+                  transform: translate(-50%, -50%) scale(1);
+                  opacity: 1;
+              }
+          }
+      </style>
+</head>
+<body>
+        <div id="wrapper">
+                  <div class="container">
+                       <p class="game_info"> </p>    
+                       <div class="Tic_tac_toe">
+                             <div class="box box1"></div>
+                             <div class="box box2"></div>
+                             <div class="box box3"></div>
+                             <div class="box box4"></div>
+                             <div class="box box5"></div>
+                             <div class="box box6"></div>
+                             <div class="box box7"></div>
+                             <div class="box box8"></div>
+                             <div class="box box9"></div>
+                       </div>  
+                       <button label="d" class="btn">New Game</button>  
+                  </div> 
+        </div>
+        <div class="congratulations">
+          <!-- Add your animated Congratulations boom spray content here -->
+          <img src="congratulations-.png" alt="Congratulations" width="280" height="80">
+      </div>
+      <div class="Looser  ">
+          <!-- Add your animated Congratulations boom spray content here -->
+          <img src="try image.png" alt="Congratulations" width="200" height="80">
+      </div>
+        <script src="script.js"></script>
+</body>
+</html>

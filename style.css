@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'poppins' , 'sans-serif'; 
+}
+#wrapper{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+     width: 100vw;
+     height: 100vh;
+}
+.container{
+    height: 100vh;
+    position: relative;
+    margin:0  auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+     
+    flex-direction: column;
+}
+.game_info{
+    position: absolute;
+    top: 8rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255 ,0.25);
+    border-radius: 0.8rem;
+    box-shadow: 2px 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgba(164, 64, 64, 0.1);
+    padding: 0.5rem 3rem;
+    background-color: rgba(255, 255, 255,0.15);
+}
+.Tic_tac_toe{
+    display: grid;
+     grid-template-columns: repeat(3 , 1fr);
+     width: 90%;
+     max-width: 18rem;
+     height: 18rem;
+     aspect-ratio: 1/1; 
+    border: 1px solid rgba(255, 255, 255,0.15);
+    border-radius: 0.8rem;
+    background-color: rgba(255, 255, 255,0.15);
+    padding: 2rem;
+    
+}
+.box{
+    position: relative;
+    width: 100%;
+    
+    aspect-ratio: 1/1; 
+  
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+
+     
+    cursor: pointer;
+}
+.box1 , .box2 , .box4 , .box5 {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.box7 , .box8 {
+    border-right: 2px solid white;
+}
+.box3 , .box6 {
+    border-bottom: 2px solid white;
+}
+.btn{
+    position: absolute;
+    bottom: 7rem;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: 1px solid rgba(255, 255, 255,0.15);
+    border-radius: 0.8rem;
+    background-color: rgba(255, 255, 255,0.15);
+    cursor: pointer;
+     display: none;   /* -- ----->  it is for  , At staring the new game nutton is hide  */
+    
+}
+.btn.active{
+    display: block;
+}
+.win{
+    background-color: rgb(37, 159, 37);
+}
