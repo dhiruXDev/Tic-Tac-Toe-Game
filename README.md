@@ -22,11 +22,7 @@ This is a simple **Tic-Tac-Toe** game built using **HTML**, **CSS**, and **JavaS
 4. If all squares are filled and no player has won, the game ends in a tie.
 5. Click the reset button to start a new game.
 ## Live Demo
-Check out the live demo of the game here: [Live Demo](https://your-live-demo-link.com)
+Check out the live demo of the game here: [Live Demo](https://tic-tac-toe-game-ten-chi.vercel.app/)
 
-## Screenshots
-Here are some screenshots of the Tic-Tac-Toe game:
-
-### Game Start:
-![Tic-Tac-Toe Start](path/to/screenshot-start.png)
+ 
  
